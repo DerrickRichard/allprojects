@@ -1,0 +1,117 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  padding: 2rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #3981FF;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+/* Section titles */
+section h2 {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  border-bottom: 2px solid #3981FF;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Project blocks */
+article {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-4px);
+}
+
+/* Project titles */
+article h3 {
+  font-size: 1.4rem;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+}
+
+/* Project descriptions */
+article p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #3981FF;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5aa0ff;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  article h3 {
+    font-size: 1.2rem;
+  }
+
+  article p {
+    font-size: 0.95rem;
+  }
+}
